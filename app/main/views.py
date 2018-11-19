@@ -163,5 +163,8 @@ def do_photo():
 def do_time():
     if 'username' in session:
         user = User.query.filter_by(loginname=session['username']).first()
-    topics = Topic.query.order_by('Topic.id desc').all()
-    return render_template('time.html', params = locals())
+        u_id = user.id
+        topics = Topic.query.order_by('Topic.id desc').filter_by(user_id = u_id)
+        return render_template('time.html', params = locals())
+    else:
+        return redirect('/')
