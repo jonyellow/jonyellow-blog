@@ -1,4 +1,4 @@
-#!D:\HJH\tarena\blog\myproject\Scripts\python.exe
+#!D:\HJH\tarena\projects\FlaskPycharmBlog\myproject\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'pip==10.0.1','console_scripts','pip3.7'
 __requires__ = 'pip==10.0.1'
 import re
